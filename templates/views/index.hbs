@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>     
+    <head>
+        <title>weather</title>
+        <link rel="icon" href="/img/weather.png">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+        
+    </head>
+    <body>
+        
+        <div class="main-content">
+            <center>{{>header}}</center>
+             <center><p>Use this site to get Weather..!</p></center>
+            <div class="search-container">
+             <form>
+                 <center>
+                <input type="text" placeholder="Search City.." name="search" autocomplete="off">
+                <button type="submit" ><i class="fa fa-search"></i></button>
+                </center>
+             </form>            
+            </div>  
+          
+           <center> <h5 id="p1"></h5>  </center>
+           <center><p id="p2"></p>   </center>
+           
+        </div>
+      
+        {{>footer}}
+         <script src="/js/app.js"></script>
+    </body>
+</html>
